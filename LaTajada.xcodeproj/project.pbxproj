@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E3DA4CF1A05990A00099833 /* BoardingDetailA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DA4C91A05990A00099833 /* BoardingDetailA.swift */; };
+		9E3DA4D01A05990A00099833 /* BoardingDetailA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA4CA1A05990A00099833 /* BoardingDetailA.xib */; };
+		9E3DA4D31A05990A00099833 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DA4CD1A05990A00099833 /* PagesViewController.swift */; };
+		9E3DA4D41A05990A00099833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DA4CE1A05990A00099833 /* ViewController.swift */; };
+		9E3DA4D81A059BE000099833 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA4D61A059BE000099833 /* Images.xcassets */; };
+		9E3DA4DE1A059FD200099833 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA4DA1A059FD200099833 /* LaunchScreen.xib */; };
+		9E3DA4DF1A059FD200099833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA4DC1A059FD200099833 /* Main.storyboard */; };
+		9E3DA4E11A05AA3B00099833 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DA4E01A05AA3B00099833 /* SearchViewController.swift */; };
+		9E9603181A08A75900ED91AD /* billy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E9603171A088CF000ED91AD /* billy.ttf */; };
+		9EFEBB7F19FD795B00262BE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBB7E19FD795B00262BE7 /* AppDelegate.swift */; };
+		9EFEBB9519FD795B00262BE7 /* LaTajadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBB9419FD795B00262BE7 /* LaTajadaTests.swift */; };
+		DE33B2CB9CD1CA85166ED76E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB270D15B0AC7C89C102BABA /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EFEBB8F19FD795B00262BE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFEBB7119FD795B00262BE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFEBB7819FD795B00262BE7;
+			remoteInfo = LaTajada;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E4DB317031DC6B618236C6B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6A9F2B17F972614751273488 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9E3DA4C91A05990A00099833 /* BoardingDetailA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingDetailA.swift; sourceTree = "<group>"; };
+		9E3DA4CA1A05990A00099833 /* BoardingDetailA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardingDetailA.xib; sourceTree = "<group>"; };
+		9E3DA4CD1A05990A00099833 /* PagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
+		9E3DA4CE1A05990A00099833 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E3DA4D61A059BE000099833 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9E3DA4D71A059BE000099833 /* LaTajada-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LaTajada-Bridging-Header.h"; sourceTree = "<group>"; };
+		9E3DA4DB1A059FD200099833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		9E3DA4DD1A059FD200099833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		9E3DA4E01A05AA3B00099833 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Search/SearchViewController.swift; sourceTree = "<group>"; };
+		9E9603171A088CF000ED91AD /* billy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = billy.ttf; path = Fonts/billy.ttf; sourceTree = "<group>"; };
+		9EFEBB7919FD795B00262BE7 /* LaTajada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTajada.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFEBB7D19FD795B00262BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFEBB7E19FD795B00262BE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EFEBB8E19FD795B00262BE7 /* LaTajadaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaTajadaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFEBB9319FD795B00262BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFEBB9419FD795B00262BE7 /* LaTajadaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTajadaTests.swift; sourceTree = "<group>"; };
+		DB270D15B0AC7C89C102BABA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EFEBB7619FD795B00262BE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE33B2CB9CD1CA85166ED76E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFEBB8B19FD795B00262BE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18AFBCC0864EEB0341AA424F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB270D15B0AC7C89C102BABA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E3DA4C61A05990A00099833 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E3DA4CE1A05990A00099833 /* ViewController.swift */,
+				9E3DA4C71A05990A00099833 /* Boarding */,
+				9E3DA4E21A05AA4500099833 /* Search */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9E3DA4C71A05990A00099833 /* Boarding */ = {
+			isa = PBXGroup;
+			children = (
+				9E3DA4C81A05990A00099833 /* Detail */,
+				9E3DA4CD1A05990A00099833 /* PagesViewController.swift */,
+			);
+			path = Boarding;
+			sourceTree = "<group>";
+		};
+		9E3DA4C81A05990A00099833 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9E3DA4C91A05990A00099833 /* BoardingDetailA.swift */,
+				9E3DA4CA1A05990A00099833 /* BoardingDetailA.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		9E3DA4D51A059BE000099833 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E9603141A088C9600ED91AD /* Fonts */,
+				9E3DA4D61A059BE000099833 /* Images.xcassets */,
+				9E3DA4D71A059BE000099833 /* LaTajada-Bridging-Header.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E3DA4D91A059FD200099833 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				9E3DA4DA1A059FD200099833 /* LaunchScreen.xib */,
+				9E3DA4DC1A059FD200099833 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		9E3DA4E21A05AA4500099833 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9E3DA4E01A05AA3B00099833 /* SearchViewController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		9E9603141A088C9600ED91AD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9E9603171A088CF000ED91AD /* billy.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		9EFEBB7019FD795B00262BE7 = {
+			isa = PBXGroup;
+			children = (
+				9EFEBB7B19FD795B00262BE7 /* LaTajada */,
+				9EFEBB9119FD795B00262BE7 /* LaTajadaTests */,
+				9EFEBB7A19FD795B00262BE7 /* Products */,
+				CC9D80FB80C1C5C6F9EF8295 /* Pods */,
+				18AFBCC0864EEB0341AA424F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9EFEBB7A19FD795B00262BE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EFEBB7919FD795B00262BE7 /* LaTajada.app */,
+				9EFEBB8E19FD795B00262BE7 /* LaTajadaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EFEBB7B19FD795B00262BE7 /* LaTajada */ = {
+			isa = PBXGroup;
+			children = (
+				9EFEBBA019FD7B4500262BE7 /* Application */,
+				9E3DA4D91A059FD200099833 /* Base.lproj */,
+				9E3DA4D51A059BE000099833 /* Resources */,
+				9E3DA4C61A05990A00099833 /* ViewControllers */,
+				9EFEBB7C19FD795B00262BE7 /* Supporting Files */,
+			);
+			path = LaTajada;
+			sourceTree = "<group>";
+		};
+		9EFEBB7C19FD795B00262BE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EFEBB7D19FD795B00262BE7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EFEBB9119FD795B00262BE7 /* LaTajadaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EFEBB9419FD795B00262BE7 /* LaTajadaTests.swift */,
+				9EFEBB9219FD795B00262BE7 /* Supporting Files */,
+			);
+			path = LaTajadaTests;
+			sourceTree = "<group>";
+		};
+		9EFEBB9219FD795B00262BE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EFEBB9319FD795B00262BE7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EFEBBA019FD7B4500262BE7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9EFEBB7E19FD795B00262BE7 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		CC9D80FB80C1C5C6F9EF8295 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A9F2B17F972614751273488 /* Pods.debug.xcconfig */,
+				2E4DB317031DC6B618236C6B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EFEBB7819FD795B00262BE7 /* LaTajada */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFEBB9819FD795B00262BE7 /* Build configuration list for PBXNativeTarget "LaTajada" */;
+			buildPhases = (
+				18E3F2B2C67FE42F44D53DB3 /* Check Pods Manifest.lock */,
+				9EFEBB7519FD795B00262BE7 /* Sources */,
+				9EFEBB7619FD795B00262BE7 /* Frameworks */,
+				9EFEBB7719FD795B00262BE7 /* Resources */,
+				63C6BCDC60342FECC3110749 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaTajada;
+			productName = LaTajada;
+			productReference = 9EFEBB7919FD795B00262BE7 /* LaTajada.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EFEBB8D19FD795B00262BE7 /* LaTajadaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFEBB9B19FD795B00262BE7 /* Build configuration list for PBXNativeTarget "LaTajadaTests" */;
+			buildPhases = (
+				9EFEBB8A19FD795B00262BE7 /* Sources */,
+				9EFEBB8B19FD795B00262BE7 /* Frameworks */,
+				9EFEBB8C19FD795B00262BE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EFEBB9019FD795B00262BE7 /* PBXTargetDependency */,
+			);
+			name = LaTajadaTests;
+			productName = LaTajadaTests;
+			productReference = 9EFEBB8E19FD795B00262BE7 /* LaTajadaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EFEBB7119FD795B00262BE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Sebastián";
+				TargetAttributes = {
+					9EFEBB7819FD795B00262BE7 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					9EFEBB8D19FD795B00262BE7 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 9EFEBB7819FD795B00262BE7;
+					};
+				};
+			};
+			buildConfigurationList = 9EFEBB7419FD795B00262BE7 /* Build configuration list for PBXProject "LaTajada" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EFEBB7019FD795B00262BE7;
+			productRefGroup = 9EFEBB7A19FD795B00262BE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EFEBB7819FD795B00262BE7 /* LaTajada */,
+				9EFEBB8D19FD795B00262BE7 /* LaTajadaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EFEBB7719FD795B00262BE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9603181A08A75900ED91AD /* billy.ttf in Resources */,
+				9E3DA4DE1A059FD200099833 /* LaunchScreen.xib in Resources */,
+				9E3DA4DF1A059FD200099833 /* Main.storyboard in Resources */,
+				9E3DA4D01A05990A00099833 /* BoardingDetailA.xib in Resources */,
+				9E3DA4D81A059BE000099833 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFEBB8C19FD795B00262BE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18E3F2B2C67FE42F44D53DB3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63C6BCDC60342FECC3110749 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EFEBB7519FD795B00262BE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3DA4E11A05AA3B00099833 /* SearchViewController.swift in Sources */,
+				9E3DA4CF1A05990A00099833 /* BoardingDetailA.swift in Sources */,
+				9E3DA4D41A05990A00099833 /* ViewController.swift in Sources */,
+				9E3DA4D31A05990A00099833 /* PagesViewController.swift in Sources */,
+				9EFEBB7F19FD795B00262BE7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFEBB8A19FD795B00262BE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFEBB9519FD795B00262BE7 /* LaTajadaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EFEBB9019FD795B00262BE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFEBB7819FD795B00262BE7 /* LaTajada */;
+			targetProxy = 9EFEBB8F19FD795B00262BE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E3DA4DA1A059FD200099833 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E3DA4DB1A059FD200099833 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		9E3DA4DC1A059FD200099833 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E3DA4DD1A059FD200099833 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EFEBB9619FD795B00262BE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EFEBB9719FD795B00262BE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EFEBB9919FD795B00262BE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A9F2B17F972614751273488 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LaTajada/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LaTajada/Resources/LaTajada-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EFEBB9A19FD795B00262BE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E4DB317031DC6B618236C6B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LaTajada/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LaTajada/Resources/LaTajada-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9EFEBB9C19FD795B00262BE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LaTajadaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaTajada.app/LaTajada";
+			};
+			name = Debug;
+		};
+		9EFEBB9D19FD795B00262BE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LaTajadaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaTajada.app/LaTajada";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EFEBB7419FD795B00262BE7 /* Build configuration list for PBXProject "LaTajada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFEBB9619FD795B00262BE7 /* Debug */,
+				9EFEBB9719FD795B00262BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EFEBB9819FD795B00262BE7 /* Build configuration list for PBXNativeTarget "LaTajada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFEBB9919FD795B00262BE7 /* Debug */,
+				9EFEBB9A19FD795B00262BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EFEBB9B19FD795B00262BE7 /* Build configuration list for PBXNativeTarget "LaTajadaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFEBB9C19FD795B00262BE7 /* Debug */,
+				9EFEBB9D19FD795B00262BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EFEBB7119FD795B00262BE7 /* Project object */;
+}

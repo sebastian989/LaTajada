@@ -1,0 +1,10 @@
+PODS:
+  - StyledPageControl (1.0)
+
+DEPENDENCIES:
+  - StyledPageControl (~> 1.0)
+
+SPEC CHECKSUMS:
+  StyledPageControl: d202381763211c13dbb1ca84e4bfe5e1473adc58
+
+COCOAPODS: 0.34.4
