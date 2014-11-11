@@ -10,6 +10,8 @@ import UIKit
 
 class SearchViewController: UIViewController, UITextFieldDelegate {
 
+    let a = "Hola"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
