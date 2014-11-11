@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B77AFE1A-904A-4311-9303-E724491883A9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LaTajada</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>65293D4C5B457DC8BFF6E693DACECC593A1383CC</key>
+		<string>github.com:sebastian989/LaTajada.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LaTajada.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>65293D4C5B457DC8BFF6E693DACECC593A1383CC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:sebastian989/LaTajada.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>65293D4C5B457DC8BFF6E693DACECC593A1383CC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>65293D4C5B457DC8BFF6E693DACECC593A1383CC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LaTajada</string>
+		</dict>
+	</array>
+</dict>
+</plist>

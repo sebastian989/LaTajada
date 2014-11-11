@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -18,7 +18,7 @@
                         <color key="backgroundColor" red="0.56470588235294117" green="0.43529411764705883" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onBoardingA" translatesAutoresizingMaskIntoConstraints="NO" id="Nnu-to-LG2">
-                        <rect key="frame" x="20" y="20" width="457" height="453"/>
+                        <rect key="frame" x="1" y="20" width="495" height="453"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -26,11 +26,11 @@
             <constraints>
                 <constraint firstItem="AY5-a9-JYZ" firstAttribute="top" secondItem="UPA-H2-sBL" secondAttribute="top" id="7Wq-69-ofs"/>
                 <constraint firstItem="Nnu-to-LG2" firstAttribute="top" secondItem="UPA-H2-sBL" secondAttribute="top" constant="20" id="IIh-v6-6n9"/>
-                <constraint firstAttribute="trailing" secondItem="Nnu-to-LG2" secondAttribute="trailing" constant="20" id="RSy-46-7Ey"/>
+                <constraint firstAttribute="trailing" secondItem="Nnu-to-LG2" secondAttribute="trailing" constant="1" id="RSy-46-7Ey"/>
                 <constraint firstAttribute="trailing" secondItem="AY5-a9-JYZ" secondAttribute="trailing" id="b1p-HK-5kG"/>
                 <constraint firstItem="AY5-a9-JYZ" firstAttribute="leading" secondItem="UPA-H2-sBL" secondAttribute="leading" id="drP-Wy-lLQ"/>
                 <constraint firstAttribute="bottom" secondItem="AY5-a9-JYZ" secondAttribute="bottom" id="e1r-ND-SaP"/>
-                <constraint firstItem="Nnu-to-LG2" firstAttribute="leading" secondItem="UPA-H2-sBL" secondAttribute="leading" constant="20" id="rUr-YT-bGt"/>
+                <constraint firstItem="Nnu-to-LG2" firstAttribute="leading" secondItem="UPA-H2-sBL" secondAttribute="leading" constant="1" id="rUr-YT-bGt"/>
                 <constraint firstAttribute="bottom" secondItem="Nnu-to-LG2" secondAttribute="bottom" constant="80" id="xGH-4k-ytb"/>
             </constraints>
             <size key="customSize" width="497" height="553"/>

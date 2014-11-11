@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -174,15 +175,28 @@
                                 <rect key="frame" x="0.0" y="530" width="600" height="60"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86C-fc-7G5">
+                                <rect key="frame" x="529" y="44" width="40" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6Gf-jD-G84"/>
+                                    <constraint firstAttribute="width" secondItem="86C-fc-7G5" secondAttribute="height" multiplier="40:33" id="ixX-M5-9kx"/>
+                                    <constraint firstAttribute="height" constant="33" id="uca-hh-Ncl"/>
+                                </constraints>
+                                <state key="normal" image="closeOnBoarding">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hfF-Qc-js2" firstAttribute="height" secondItem="xrB-C7-nMj" secondAttribute="height" multiplier="0.1" id="1rk-Ve-BkG"/>
+                            <constraint firstAttribute="trailing" secondItem="86C-fc-7G5" secondAttribute="trailing" constant="31" id="2Gc-bu-IAh"/>
                             <constraint firstItem="xDf-M7-WdT" firstAttribute="leading" secondItem="xrB-C7-nMj" secondAttribute="leadingMargin" constant="-16" id="2nL-LU-Pve"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xDf-M7-WdT" secondAttribute="trailing" constant="-16" id="Aaz-of-acr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hfF-Qc-js2" secondAttribute="trailing" constant="-16" id="Tcw-LP-mYy"/>
                             <constraint firstItem="tyi-Hl-rZ9" firstAttribute="top" secondItem="hfF-Qc-js2" secondAttribute="bottom" constant="10" id="YNc-0B-pOJ"/>
                             <constraint firstItem="tyi-Hl-rZ9" firstAttribute="top" secondItem="xDf-M7-WdT" secondAttribute="bottom" id="aJQ-Jb-ScT"/>
+                            <constraint firstItem="86C-fc-7G5" firstAttribute="top" secondItem="b1D-BP-ENL" secondAttribute="bottom" constant="24" id="bqz-av-ZEF"/>
                             <constraint firstItem="hfF-Qc-js2" firstAttribute="leading" secondItem="xrB-C7-nMj" secondAttribute="leadingMargin" constant="-16" id="ox2-dd-WTe"/>
                             <constraint firstItem="xDf-M7-WdT" firstAttribute="top" secondItem="b1D-BP-ENL" secondAttribute="bottom" id="vFF-uu-eQI"/>
                             <constraint firstAttribute="width" secondItem="hfF-Qc-js2" secondAttribute="width" id="yIl-wM-RcG"/>
@@ -200,6 +214,7 @@
     </scenes>
     <resources>
         <image name="Logo" width="272" height="128"/>
+        <image name="closeOnBoarding" width="33" height="33"/>
         <image name="mainMenu" width="426" height="757"/>
         <image name="searchView" width="426" height="757"/>
     </resources>
