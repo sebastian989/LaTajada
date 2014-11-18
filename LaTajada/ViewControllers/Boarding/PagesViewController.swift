@@ -72,4 +72,10 @@ class PagesViewController : UIViewController, UICollectionViewDelegateFlowLayout
         self.pageControl.diameter            = 22
         self.pageControl.strokeWidth         = 2
     }
+    
+    @IBAction func close(sender: AnyObject)
+    {
+        let searchView = self.storyboard?.instantiateViewControllerWithIdentifier("searchView") as SearchViewController
+        self.showViewController(searchView, sender: self)
+    }
 }

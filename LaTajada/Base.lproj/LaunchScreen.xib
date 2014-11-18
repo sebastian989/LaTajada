@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,31 +15,44 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainMenu" translatesAutoresizingMaskIntoConstraints="NO" id="e5a-3G-pAs">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ask-Dc-Uqd">
-                    <rect key="frame" x="120" y="80" width="240" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laTajada" translatesAutoresizingMaskIntoConstraints="NO" id="ask-Dc-Uqd">
+                    <rect key="frame" x="96" y="105" width="288" height="154"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="ask-Dc-Uqd" secondAttribute="height" multiplier="15:8" id="6nI-86-97C"/>
                         <constraint firstAttribute="height" constant="128" id="BwT-AX-cmS"/>
                         <constraint firstAttribute="width" constant="240" id="SLa-G2-tju"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BwT-AX-cmS"/>
+                            <exclude reference="SLa-G2-tju"/>
+                        </mask>
+                    </variation>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="e5a-3G-pAs" secondAttribute="trailing" id="0yc-gT-wUU"/>
-                <constraint firstItem="ask-Dc-Uqd" firstAttribute="centerY" secondItem="e5a-3G-pAs" secondAttribute="centerY" constant="-96" id="7Wc-8I-q6n"/>
+                <constraint firstItem="ask-Dc-Uqd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="105" id="2AW-8Y-VAs"/>
+                <constraint firstItem="ask-Dc-Uqd" firstAttribute="centerY" secondItem="e5a-3G-pAs" secondAttribute="centerY" constant="-71" id="7Wc-8I-q6n"/>
                 <constraint firstItem="e5a-3G-pAs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ih1-Og-cYs"/>
                 <constraint firstItem="ask-Dc-Uqd" firstAttribute="centerX" secondItem="e5a-3G-pAs" secondAttribute="centerX" id="XU4-eA-CEc"/>
                 <constraint firstAttribute="bottom" secondItem="e5a-3G-pAs" secondAttribute="bottom" id="f7P-Lj-oCw"/>
                 <constraint firstItem="e5a-3G-pAs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iWJ-hy-wYX"/>
+                <constraint firstItem="ask-Dc-Uqd" firstAttribute="width" secondItem="e5a-3G-pAs" secondAttribute="width" multiplier="0.6" id="kBY-iS-XX5"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7Wc-8I-q6n"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
     <resources>
-        <image name="Logo" width="272" height="128"/>
+        <image name="laTajada" width="272" height="128"/>
         <image name="mainMenu" width="426" height="757"/>
     </resources>
 </document>

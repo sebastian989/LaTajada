@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0B63D21A182696003EE9F8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0B63D11A182696003EE9F8 /* DetailViewController.swift */; };
 		9E3DA4CF1A05990A00099833 /* BoardingDetailA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DA4C91A05990A00099833 /* BoardingDetailA.swift */; };
 		9E3DA4D01A05990A00099833 /* BoardingDetailA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA4CA1A05990A00099833 /* BoardingDetailA.xib */; };
 		9E3DA4D31A05990A00099833 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DA4CD1A05990A00099833 /* PagesViewController.swift */; };
@@ -15,13 +16,38 @@
 		9E3DA4DE1A059FD200099833 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA4DA1A059FD200099833 /* LaunchScreen.xib */; };
 		9E3DA4DF1A059FD200099833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA4DC1A059FD200099833 /* Main.storyboard */; };
 		9E3DA4E11A05AA3B00099833 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DA4E01A05AA3B00099833 /* SearchViewController.swift */; };
+		9E78FFDA1A1B1EDB00CF15B3 /* libPods-SDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E78FFD91A1B1EDB00CF15B3 /* libPods-SDWebImage.a */; };
+		9E7C03C41A12ED6B00463FF3 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7C03BE1A12EC9400463FF3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E7C03F71A132F7900463FF3 /* CellA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7C03F61A132F7900463FF3 /* CellA.swift */; };
 		9E9603181A08A75900ED91AD /* billy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E9603171A088CF000ED91AD /* billy.ttf */; };
+		9ED56D7C1A15CDB00021FD3B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED56D7B1A15CDB00021FD3B /* Image.swift */; };
 		9EFEBB7F19FD795B00262BE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBB7E19FD795B00262BE7 /* AppDelegate.swift */; };
 		9EFEBB9519FD795B00262BE7 /* LaTajadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBB9419FD795B00262BE7 /* LaTajadaTests.swift */; };
 		DE33B2CB9CD1CA85166ED76E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB270D15B0AC7C89C102BABA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9E7C03BD1A12EC9400463FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E7C03B81A12EC9400463FF3 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		9E7C03BF1A12EC9400463FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E7C03B81A12EC9400463FF3 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		9E7C03C11A12ECFD00463FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E7C03B81A12EC9400463FF3 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 		9EFEBB8F19FD795B00262BE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9EFEBB7119FD795B00262BE7 /* Project object */;
@@ -31,9 +57,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9E7C03C31A12ED1400463FF3 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9E7C03C41A12ED6B00463FF3 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2E4DB317031DC6B618236C6B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6A9F2B17F972614751273488 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9E0B63D11A182696003EE9F8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Detail/DetailViewController.swift; sourceTree = "<group>"; };
 		9E3DA4C91A05990A00099833 /* BoardingDetailA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingDetailA.swift; sourceTree = "<group>"; };
 		9E3DA4CA1A05990A00099833 /* BoardingDetailA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardingDetailA.xib; sourceTree = "<group>"; };
 		9E3DA4CD1A05990A00099833 /* PagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +84,11 @@
 		9E3DA4DB1A059FD200099833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		9E3DA4DD1A059FD200099833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		9E3DA4E01A05AA3B00099833 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Search/SearchViewController.swift; sourceTree = "<group>"; };
+		9E78FFD91A1B1EDB00CF15B3 /* libPods-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-SDWebImage.a"; path = "Pods/build/Debug-iphoneos/libPods-SDWebImage.a"; sourceTree = "<group>"; };
+		9E7C03B81A12EC9400463FF3 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		9E7C03F61A132F7900463FF3 /* CellA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellA.swift; path = Search/Cell/CellA.swift; sourceTree = "<group>"; };
 		9E9603171A088CF000ED91AD /* billy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = billy.ttf; path = Fonts/billy.ttf; sourceTree = "<group>"; };
+		9ED56D7B1A15CDB00021FD3B /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Extensions/Image.swift; sourceTree = "<group>"; };
 		9EFEBB7919FD795B00262BE7 /* LaTajada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaTajada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFEBB7D19FD795B00262BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFEBB7E19FD795B00262BE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E78FFDA1A1B1EDB00CF15B3 /* libPods-SDWebImage.a in Frameworks */,
 				DE33B2CB9CD1CA85166ED76E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,9 +121,18 @@
 		18AFBCC0864EEB0341AA424F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E78FFD91A1B1EDB00CF15B3 /* libPods-SDWebImage.a */,
 				DB270D15B0AC7C89C102BABA /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E0B63CB1A182527003EE9F8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9E0B63D11A182696003EE9F8 /* DetailViewController.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		9E3DA4C61A05990A00099833 /* ViewControllers */ = {
@@ -86,6 +141,7 @@
 				9E3DA4CE1A05990A00099833 /* ViewController.swift */,
 				9E3DA4C71A05990A00099833 /* Boarding */,
 				9E3DA4E21A05AA4500099833 /* Search */,
+				9E0B63CB1A182527003EE9F8 /* Detail */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -130,9 +186,35 @@
 		9E3DA4E21A05AA4500099833 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				9E7C03F51A132F3800463FF3 /* Cell */,
 				9E3DA4E01A05AA3B00099833 /* SearchViewController.swift */,
 			);
 			name = Search;
+			sourceTree = "<group>";
+		};
+		9E7C03B71A12EC8900463FF3 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9E7C03B81A12EC9400463FF3 /* Alamofire.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		9E7C03B91A12EC9400463FF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E7C03BE1A12EC9400463FF3 /* Alamofire.framework */,
+				9E7C03C01A12EC9400463FF3 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E7C03F51A132F3800463FF3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9E7C03F61A132F7900463FF3 /* CellA.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		9E9603141A088C9600ED91AD /* Fonts */ = {
@@ -141,6 +223,14 @@
 				9E9603171A088CF000ED91AD /* billy.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		9ED56D791A15CD0B0021FD3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9ED56D7B1A15CDB00021FD3B /* Image.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		9EFEBB7019FD795B00262BE7 = {
@@ -166,6 +256,8 @@
 		9EFEBB7B19FD795B00262BE7 /* LaTajada */ = {
 			isa = PBXGroup;
 			children = (
+				9ED56D791A15CD0B0021FD3B /* Extensions */,
+				9E7C03B71A12EC8900463FF3 /* Libraries */,
 				9EFEBBA019FD7B4500262BE7 /* Application */,
 				9E3DA4D91A059FD200099833 /* Base.lproj */,
 				9E3DA4D51A059BE000099833 /* Resources */,
@@ -229,10 +321,12 @@
 				9EFEBB7619FD795B00262BE7 /* Frameworks */,
 				9EFEBB7719FD795B00262BE7 /* Resources */,
 				63C6BCDC60342FECC3110749 /* Copy Pods Resources */,
+				9E7C03C31A12ED1400463FF3 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9E7C03C21A12ECFD00463FF3 /* PBXTargetDependency */,
 			);
 			name = LaTajada;
 			productName = LaTajada;
@@ -286,6 +380,12 @@
 			mainGroup = 9EFEBB7019FD795B00262BE7;
 			productRefGroup = 9EFEBB7A19FD795B00262BE7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9E7C03B91A12EC9400463FF3 /* Products */;
+					ProjectRef = 9E7C03B81A12EC9400463FF3 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9EFEBB7819FD795B00262BE7 /* LaTajada */,
@@ -293,6 +393,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9E7C03BE1A12EC9400463FF3 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 9E7C03BD1A12EC9400463FF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E7C03C01A12EC9400463FF3 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 9E7C03BF1A12EC9400463FF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9EFEBB7719FD795B00262BE7 /* Resources */ = {
@@ -354,11 +471,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ED56D7C1A15CDB00021FD3B /* Image.swift in Sources */,
 				9E3DA4E11A05AA3B00099833 /* SearchViewController.swift in Sources */,
 				9E3DA4CF1A05990A00099833 /* BoardingDetailA.swift in Sources */,
 				9E3DA4D41A05990A00099833 /* ViewController.swift in Sources */,
+				9E7C03F71A132F7900463FF3 /* CellA.swift in Sources */,
 				9E3DA4D31A05990A00099833 /* PagesViewController.swift in Sources */,
 				9EFEBB7F19FD795B00262BE7 /* AppDelegate.swift in Sources */,
+				9E0B63D21A182696003EE9F8 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +493,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9E7C03C21A12ECFD00463FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 9E7C03C11A12ECFD00463FF3 /* PBXContainerItemProxy */;
+		};
 		9EFEBB9019FD795B00262BE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9EFEBB7819FD795B00262BE7 /* LaTajada */;
@@ -485,6 +610,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LaTajada/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LaTajada/Resources/LaTajada-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -499,6 +628,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LaTajada/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LaTajada/Resources/LaTajada-Bridging-Header.h";
 			};

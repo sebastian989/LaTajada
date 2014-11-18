@@ -7,18 +7,105 @@
 //
 
 import UIKit
+import Alamofire
 
-class SearchViewController: UIViewController, UITextFieldDelegate {
-
-    let a = "Hola"
+class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // Outlets
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    // Properties
+    var data : Array<[String:String]>!
+    var filteredData : Array<[String:String]>!
 
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        Alamofire.request(.GET, "https://dl.dropboxusercontent.com/u/40526502/LaTajada/data.json").responseJSON
+        {
+            (_, _, JSON, _) in self.handleResponse(JSON!)
+        }
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+    func handleResponse(data : AnyObject)
+    {
+        self.data = data as Array<[String:String]>
+        self.filteredData = self.data
+        self.tableView.reloadData()
+        self.tableView.hidden = false
+    }
+    
+    // Search methods
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar)
+    {
+        self.searchBar.showsCancelButton = true
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String)
+    {
+        if searchText.isEmpty {
+            self.filteredData = self.data
+        }
+        else
+        {
+            filterDataFromSearchText(searchText)
+        }
+        self.tableView.reloadData()
+    }
+    
+    func filterDataFromSearchText(searchText : String)
+    {
+        self.filteredData = self.data.filter(
+            {
+                (item : [String:String]) -> Bool in
+                let stringMatch = String(item["nombre"]!).lowercaseString.rangeOfString(searchText.lowercaseString)
+                return (stringMatch != nil)
+            })
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar)
+    {
+        self.searchBar.resignFirstResponder()
+        self.searchBar.showsCancelButton = false
+    }
+    
+    // Table view methods
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let identifier = "CellA"
+        var cell: CellA! = self.tableView.dequeueReusableCellWithIdentifier(identifier ,forIndexPath: indexPath) as CellA
+        if let item = self.filteredData?[indexPath.row]
+        {
+            var name : String = item["nombre"]!
+            if indexPath.row % 2 == 0
+            {
+                cell.rightImage.hidden = true
+                cell.rightLabel.hidden = true
+                cell.leftLabel.text   = name
+            }
+            else
+            {
+                cell.leftImage.hidden = true
+                cell.leftLabel.hidden = true
+                cell.rightLabel.text   = name
+            }
+        }
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let count = self.filteredData?.count {
+            return self.filteredData.count
+        }
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.searchBar.showsCancelButton = false
+        self.searchBar.resignFirstResponder()
+        let detailView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as DetailViewController
+        detailView.item = self.filteredData[indexPath.row]
+        self.showViewController(detailView, sender: self)
     }
 }
