@@ -14,6 +14,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     
     // Properties
     var data : Array<[String:String]>!
@@ -22,6 +24,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.activity.startAnimating()
+        var blur:UIBlurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        var effectView:UIVisualEffectView = UIVisualEffectView (effect: blur)
+        effectView.frame = self.loadingView.bounds
+        self.loadingView.insertSubview(effectView, atIndex: 0)
+        
         Alamofire.request(.GET, "https://dl.dropboxusercontent.com/u/40526502/LaTajada/data.json").responseJSON
         {
             (_, _, JSON, _) in self.handleResponse(JSON!)
@@ -30,6 +38,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func handleResponse(data : AnyObject)
     {
+        self.activity.stopAnimating()
+        self.loadingView.hidden = true
         self.data = data as Array<[String:String]>
         self.filteredData = self.data
         self.tableView.reloadData()

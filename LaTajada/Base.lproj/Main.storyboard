@@ -16,6 +16,7 @@
             <string>billy</string>
             <string>billy</string>
             <string>billy</string>
+            <string>billy</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -211,13 +212,48 @@
                                     <outlet property="delegate" destination="orY-pH-BAU" id="VPa-ug-ttU"/>
                                 </connections>
                             </searchBar>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygN-2B-pZ4">
+                                <rect key="frame" x="260" y="260" width="80" height="80"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2wZ-X3-6rW">
+                                        <rect key="frame" x="22" y="8" width="37" height="37"/>
+                                        <color key="color" red="1" green="0.031372549020000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmB-kF-uYU">
+                                        <rect key="frame" x="7" y="50" width="66" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="inX-fE-1WH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="billy" family="billy" pointSize="22"/>
+                                        <color key="textColor" red="1" green="0.031372549020000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="2wZ-X3-6rW" firstAttribute="top" secondItem="ygN-2B-pZ4" secondAttribute="top" constant="8" id="5E4-rQ-e7E"/>
+                                    <constraint firstAttribute="centerX" secondItem="2wZ-X3-6rW" secondAttribute="centerX" id="Qk4-px-gw7"/>
+                                    <constraint firstAttribute="centerX" secondItem="BmB-kF-uYU" secondAttribute="centerX" id="fZ7-9u-x5W"/>
+                                    <constraint firstItem="BmB-kF-uYU" firstAttribute="top" secondItem="2wZ-X3-6rW" secondAttribute="bottom" constant="5" id="qkN-kV-3cy"/>
+                                    <constraint firstAttribute="width" secondItem="ygN-2B-pZ4" secondAttribute="height" multiplier="1:1" id="rJ7-wn-zar"/>
+                                    <constraint firstAttribute="width" constant="80" id="vqt-2P-u3n"/>
+                                    <constraint firstAttribute="height" constant="80" id="wjV-yP-aKr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EH2-bg-LHn" firstAttribute="top" secondItem="w1c-et-Cxn" secondAttribute="top" id="3R8-sy-FZA"/>
                             <constraint firstItem="0Cf-s0-tOi" firstAttribute="width" secondItem="EH2-bg-LHn" secondAttribute="width" multiplier="0.8" id="C54-Hh-h3z"/>
+                            <constraint firstAttribute="centerX" secondItem="ygN-2B-pZ4" secondAttribute="centerX" id="DGe-AC-WGH"/>
                             <constraint firstAttribute="trailing" secondItem="EH2-bg-LHn" secondAttribute="trailing" id="Njl-34-ZVW"/>
                             <constraint firstItem="scO-HD-Uht" firstAttribute="top" secondItem="0Cf-s0-tOi" secondAttribute="bottom" id="Pr8-DF-s6M"/>
+                            <constraint firstItem="ygN-2B-pZ4" firstAttribute="centerY" secondItem="w1c-et-Cxn" secondAttribute="centerY" id="VPQ-ym-Jqb"/>
                             <constraint firstItem="Yzm-jW-0Yv" firstAttribute="leading" secondItem="w1c-et-Cxn" secondAttribute="leading" id="XkI-mX-bR5"/>
                             <constraint firstItem="scO-HD-Uht" firstAttribute="top" secondItem="EH2-bg-LHn" secondAttribute="bottom" id="b2P-W6-OYF"/>
                             <constraint firstItem="0Cf-s0-tOi" firstAttribute="centerX" secondItem="EH2-bg-LHn" secondAttribute="centerX" id="cTC-fB-A8A"/>
@@ -228,6 +264,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activity" destination="2wZ-X3-6rW" id="oTn-PK-rr2"/>
+                        <outlet property="loadingView" destination="ygN-2B-pZ4" id="Fcb-ob-OCL"/>
                         <outlet property="searchBar" destination="Yzm-jW-0Yv" id="khV-fa-HD9"/>
                         <outlet property="searchDisplayController" destination="0Vl-MH-koS" id="Qm6-32-tSg"/>
                         <outlet property="tableView" destination="0Cf-s0-tOi" id="nPi-5F-aYo"/>
@@ -262,7 +300,6 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cA1-t6-Ofh">
                                 <rect key="frame" x="8" y="28" width="281" height="294"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbB-tk-AEA">
                                 <rect key="frame" x="287" y="46" width="40" height="33"/>

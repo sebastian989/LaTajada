@@ -32,8 +32,8 @@ class DetailViewController: UIViewController {
     func fillView()
     {
         // Set main image
-        var url = NSURL(string: ("https://dl.dropboxusercontent.com/u/40526502/LaTajada/exampleImage.pdf"))
-        self.mainImage.sd_setImageWithURL(NSURL(string: "https://dl.dropboxusercontent.com/u/40526502/LaTajada/exampleImage.pdf" as String))
+        let url = self.item?["img"]?
+        self.mainImage.sd_setImageWithURL(NSURL(string: url!))
         
         self.typeLabel.text = self.item!["tipo"]
         self.descriptionLabel.text = self.item!["descripcion"]
