@@ -11,9 +11,7 @@ import UIKit
 class CellA: UITableViewCell {
     
     @IBOutlet weak var leftImage: UIImageView!
-    @IBOutlet weak var rightImage: UIImageView!
     @IBOutlet weak var leftLabel: UILabel!
-    @IBOutlet weak var rightLabel: UILabel!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

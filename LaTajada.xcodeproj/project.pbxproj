@@ -25,6 +25,7 @@
 		9F350E091A1ED61500E891BD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAD1CA01A1ECF2B00BDECD8 /* Alamofire.framework */; };
 		9F350E0A1A1ED61500E891BD /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAD1CA01A1ECF2B00BDECD8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE33B2CB9CD1CA85166ED76E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB270D15B0AC7C89C102BABA /* libPods.a */; };
+		EC6BEF261A1FAB15002659D2 /* CellB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BEF251A1FAB15002659D2 /* CellB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		9EFEBB9319FD795B00262BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFEBB9419FD795B00262BE7 /* LaTajadaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTajadaTests.swift; sourceTree = "<group>"; };
 		DB270D15B0AC7C89C102BABA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6BEF251A1FAB15002659D2 /* CellB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellB.swift; path = Search/Cell/CellB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				9E7C03F61A132F7900463FF3 /* CellA.swift */,
+				EC6BEF251A1FAB15002659D2 /* CellB.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				9ED56D7C1A15CDB00021FD3B /* Image.swift in Sources */,
 				9E3DA4E11A05AA3B00099833 /* SearchViewController.swift in Sources */,
 				9E3DA4CF1A05990A00099833 /* BoardingDetailA.swift in Sources */,
+				EC6BEF261A1FAB15002659D2 /* CellB.swift in Sources */,
 				9E3DA4D41A05990A00099833 /* ViewController.swift in Sources */,
 				9E7C03F71A132F7900463FF3 /* CellA.swift in Sources */,
 				9E3DA4D31A05990A00099833 /* PagesViewController.swift in Sources */,

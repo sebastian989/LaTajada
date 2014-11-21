@@ -88,21 +88,21 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let identifier = "CellA"
-        var cell: CellA! = self.tableView.dequeueReusableCellWithIdentifier(identifier ,forIndexPath: indexPath) as CellA
+        var cell = self.tableView.dequeueReusableCellWithIdentifier("Empty" ,forIndexPath: indexPath) as UITableViewCell
         if let item = self.filteredData?[indexPath.row]
         {
             var name : String = item["nombre"]!
             if indexPath.row % 2 == 0
             {
-                cell.rightImage.hidden = true
-                cell.rightLabel.hidden = true
-                cell.leftLabel.text   = name
+              var cell: CellA! = self.tableView.dequeueReusableCellWithIdentifier(identifier ,forIndexPath: indexPath) as CellA
+                cell.leftLabel.text    = name
+              return cell
             }
             else
             {
-                cell.leftImage.hidden = true
-                cell.leftLabel.hidden = true
-                cell.rightLabel.text   = name
+              var cell: CellB! = self.tableView.dequeueReusableCellWithIdentifier("CellB" ,forIndexPath: indexPath) as CellB
+              cell.rightLabel.text  = name
+              return cell
             }
         }
         return cell
