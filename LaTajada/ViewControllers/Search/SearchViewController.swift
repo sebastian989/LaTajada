@@ -34,7 +34,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         effectView.frame = self.loadingView.bounds
         self.loadingView.insertSubview(effectView, atIndex: 0)
         
-        Alamofire.request(.GET, "https://dl.dropboxusercontent.com/u/40526502/LaTajada/data.json").responseJSON
+        Alamofire.request(.GET, "https://www.dropbox.com/s/h85kwxsrloegooi/data.json?raw=1").responseJSON
         {
             (_, _, JSON, _) in self.handleResponse(JSON!)
         }
