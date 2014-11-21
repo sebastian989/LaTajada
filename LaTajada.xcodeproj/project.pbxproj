@@ -22,6 +22,8 @@
 		9ED56D7C1A15CDB00021FD3B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED56D7B1A15CDB00021FD3B /* Image.swift */; };
 		9EFEBB7F19FD795B00262BE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBB7E19FD795B00262BE7 /* AppDelegate.swift */; };
 		9EFEBB9519FD795B00262BE7 /* LaTajadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBB9419FD795B00262BE7 /* LaTajadaTests.swift */; };
+		9F350E091A1ED61500E891BD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAD1CA01A1ECF2B00BDECD8 /* Alamofire.framework */; };
+		9F350E0A1A1ED61500E891BD /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAD1CA01A1ECF2B00BDECD8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE33B2CB9CD1CA85166ED76E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB270D15B0AC7C89C102BABA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,13 @@
 			remoteGlobalIDString = 9EFEBB7819FD795B00262BE7;
 			remoteInfo = LaTajada;
 		};
+		9F350E0B1A1ED61500E891BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EAD1C9A1A1ECF2B00BDECD8 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9F350E0A1A1ED61500E891BD /* Alamofire.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E78FFDA1A1B1EDB00CF15B3 /* libPods-SDWebImage.a in Frameworks */,
+				9F350E091A1ED61500E891BD /* Alamofire.framework in Frameworks */,
 				DE33B2CB9CD1CA85166ED76E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +336,7 @@
 			);
 			dependencies = (
 				9EAD1CA41A1ECFA500BDECD8 /* PBXTargetDependency */,
+				9F350E0C1A1ED61500E891BD /* PBXTargetDependency */,
 			);
 			name = LaTajada;
 			productName = LaTajada;
@@ -501,6 +513,11 @@
 			target = 9EFEBB7819FD795B00262BE7 /* LaTajada */;
 			targetProxy = 9EFEBB8F19FD795B00262BE7 /* PBXContainerItemProxy */;
 		};
+		9F350E0C1A1ED61500E891BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 9F350E0B1A1ED61500E891BD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -606,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LaTajada/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -624,6 +642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LaTajada/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
