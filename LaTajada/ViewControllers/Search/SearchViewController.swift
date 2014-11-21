@@ -24,6 +24,10 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.tableView.bounces = true
+        self.tableView.delaysContentTouches = true
+        
         self.activity.startAnimating()
         var blur:UIBlurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         var effectView:UIVisualEffectView = UIVisualEffectView (effect: blur)
@@ -117,5 +121,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let detailView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as DetailViewController
         detailView.item = self.filteredData[indexPath.row]
         self.showViewController(detailView, sender: self)
+        self.tableView.reloadData()
     }
 }

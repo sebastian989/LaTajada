@@ -136,7 +136,7 @@
                                 <rect key="frame" x="60" y="106" width="480" height="494"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="CellA" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellA" rowHeight="86" id="gcB-FV-WAC" customClass="CellA" customModule="LaTajada">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="CellA" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellA" rowHeight="86" id="gcB-FV-WAC" customClass="CellA" customModule="LaTajada">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gcB-FV-WAC" id="C4G-r1-kYG">
