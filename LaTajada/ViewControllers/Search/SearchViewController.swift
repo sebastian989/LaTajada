@@ -50,7 +50,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.tableView.hidden = false
     }
     
-    // Search methods
+    // MARK: Search methods
     func searchBarTextDidBeginEditing(searchBar: UISearchBar)
     {
         self.searchBar.showsCancelButton = true
@@ -84,17 +84,16 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.searchBar.showsCancelButton = false
     }
     
-    // Table view methods
+    // MARK: Table view methods
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let identifier = "CellA"
-        var cell = self.tableView.dequeueReusableCellWithIdentifier("Empty" ,forIndexPath: indexPath) as UITableViewCell
+        var cell : UITableViewCell?
         if let item = self.filteredData?[indexPath.row]
         {
             var name : String = item["nombre"]!
             if indexPath.row % 2 == 0
             {
-              var cell: CellA! = self.tableView.dequeueReusableCellWithIdentifier(identifier ,forIndexPath: indexPath) as CellA
+              var cell: CellA! = self.tableView.dequeueReusableCellWithIdentifier("CellA" ,forIndexPath: indexPath) as CellA
                 cell.leftLabel.text    = name
               return cell
             }
@@ -105,7 +104,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
               return cell
             }
         }
-        return cell
+        return cell!
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
