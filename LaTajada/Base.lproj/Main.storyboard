@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -546,6 +546,19 @@
                                     <action selector="close:" destination="ycH-rs-Scz" eventType="touchUpInside" id="Ojx-1z-LbY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta7-Bt-XeF">
+                                <rect key="frame" x="238" y="422" width="124" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="4ch-hT-FdI"/>
+                                    <constraint firstAttribute="height" constant="80" id="XS5-vF-VvJ"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openFacebook:" destination="ycH-rs-Scz" eventType="touchUpInside" id="3bW-Kj-jcB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -553,10 +566,12 @@
                             <constraint firstAttribute="trailing" secondItem="86C-fc-7G5" secondAttribute="trailing" constant="31" id="2Gc-bu-IAh"/>
                             <constraint firstItem="xDf-M7-WdT" firstAttribute="leading" secondItem="xrB-C7-nMj" secondAttribute="leadingMargin" constant="-16" id="2nL-LU-Pve"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xDf-M7-WdT" secondAttribute="trailing" constant="-16" id="Aaz-of-acr"/>
+                            <constraint firstAttribute="centerX" secondItem="ta7-Bt-XeF" secondAttribute="centerX" id="OM2-JG-UQo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hfF-Qc-js2" secondAttribute="trailing" constant="-16" id="Tcw-LP-mYy"/>
                             <constraint firstItem="tyi-Hl-rZ9" firstAttribute="top" secondItem="hfF-Qc-js2" secondAttribute="bottom" constant="10" id="YNc-0B-pOJ"/>
                             <constraint firstItem="tyi-Hl-rZ9" firstAttribute="top" secondItem="xDf-M7-WdT" secondAttribute="bottom" id="aJQ-Jb-ScT"/>
                             <constraint firstItem="86C-fc-7G5" firstAttribute="top" secondItem="b1D-BP-ENL" secondAttribute="bottom" constant="15" id="bqz-av-ZEF"/>
+                            <constraint firstItem="hfF-Qc-js2" firstAttribute="top" secondItem="ta7-Bt-XeF" secondAttribute="bottom" constant="28" id="deP-Xi-n8B"/>
                             <constraint firstItem="hfF-Qc-js2" firstAttribute="leading" secondItem="xrB-C7-nMj" secondAttribute="leadingMargin" constant="-16" id="ox2-dd-WTe"/>
                             <constraint firstItem="xDf-M7-WdT" firstAttribute="top" secondItem="b1D-BP-ENL" secondAttribute="bottom" constant="-20" id="vFF-uu-eQI"/>
                             <constraint firstAttribute="width" secondItem="hfF-Qc-js2" secondAttribute="width" id="yIl-wM-RcG"/>
@@ -564,6 +579,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="xDf-M7-WdT" id="j74-q6-qcq"/>
+                        <outlet property="facebookButton" destination="ta7-Bt-XeF" id="QI8-gh-SOy"/>
                         <outlet property="pageControl" destination="hfF-Qc-js2" id="s6M-ED-dHQ"/>
                     </connections>
                 </viewController>

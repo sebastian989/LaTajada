@@ -13,6 +13,7 @@ class PagesViewController : UIViewController, UICollectionViewDelegateFlowLayout
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: StyledPageControl!
+    @IBOutlet weak var facebookButton: UIButton!
     
     override func viewDidLoad()
     {
@@ -30,17 +31,28 @@ class PagesViewController : UIViewController, UICollectionViewDelegateFlowLayout
     {
         var cell : BoardingDetailA = self.collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as BoardingDetailA
         
-        if indexPath.row == 0 {
+        if indexPath.row == 0
+        {
+            self.facebookButton.enabled = false
             var image = UIImage(named: "onBoardingA")
             cell.informationImageView.image = image
+            return cell;
         }
-        else if indexPath.row == 1 {
+        
+        if indexPath.row == 1
+        {
+            self.facebookButton.enabled = false
             var image = UIImage(named: "onBoardingB")
             cell.informationImageView.image = image
+            return cell;
         }
-        else {
+        
+        if indexPath.row == 2
+        {
+            self.facebookButton.enabled = true
             var image = UIImage(named: "onBoardingC")
             cell.informationImageView.image = image
+            return cell;
         }
         
         return cell
@@ -77,5 +89,12 @@ class PagesViewController : UIViewController, UICollectionViewDelegateFlowLayout
     {
         let searchView = self.storyboard?.instantiateViewControllerWithIdentifier("searchView") as SearchViewController
         self.showViewController(searchView, sender: self)
+    }
+    
+    @IBAction func openFacebook(sender: AnyObject)
+    {
+        var url : NSURL
+        url = NSURL(string: "https://www.facebook.com/latajadaescucha")!
+        UIApplication.sharedApplication().openURL(url)
     }
 }
